@@ -2,26 +2,140 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: auto;
   }
+
+  .main {
+    font-weight: bold;
+    padding-bottom: 10px;
+    /* padding-top: 100px; */
+    
+    align-items: center;
+    font-size: x-large; 
+  }
+
+
+
+  .allpost {
+    padding-top: 10px;
+    font-size: x-large;
+    font-weight: bold;
+  }
+
+  .navbar {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .logo{
+    font-size: 40px;
+    font-style: italic;
+    font-family: serif;
+  }
+
+  .navitem {
+    font-size: x-large;
+  }
+
+  .navitem:hover {
+    box-shadow: 1px 1px 5px 2px rgba(82, 82, 82, 0.53);
+    padding: 2px;
+    border-radius: 8px;
+  }
+
+  .app_wrapper {
+    max-width: 700px;
+    margin: auto;
+  }
+
+  .card:hover {
+    box-shadow: 1px 1px 5px 2px rgba(82, 82, 82, 0.53);
+  }
+  
+  .card {
+    
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 12px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  .card_out {
+    padding-bottom: 40px;
+  }
+
+  .card_post {
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+  }
+
+.card_title {
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
 }
+
+.card_title_post {
+  padding-bottom: 12px;
+  font-size: 24px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+}
+
+.card_desc_post {
+  padding-bottom: 20px;
+}
+
+.card_desc {
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.card_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.time {
+  padding-right: 10px;
+}
+
+.user {
+  text-decoration: underline;
+  text-transform: capitalize;
+  font-style: italic;
+  padding-right: 10px;
+  font-size: 20px;
+  display: flex;
+  justify-content: end;
+}
+
+.hero_main {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.hero {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  width: 80%;
+  box-shadow: 1px 1px 5px 2px rgba(82, 82, 82, 0.53);
+}
+
+ .cr {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-bottom: 30px;
+  color: rgb(111, 111, 111);
+ }
